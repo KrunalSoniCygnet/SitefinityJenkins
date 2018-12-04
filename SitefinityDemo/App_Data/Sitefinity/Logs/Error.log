@@ -958,3 +958,186 @@ Win32 ThreadId:17344
 
 Extended Properties: 
 ----------------------------------------
+----------------------------------------
+Timestamp: 12/4/2018 9:36:35 AM
+
+Message: Timestamp: 12/4/2018 9:36:35 AM
+Message: Telerik.OpenAccess.OpenAccessException: Telerik.OpenAccess.Exceptions.DataStoreException: Unable to connect to Backend=mssql;Driver=genericADO2;ConnectionString=data source=cipl-1pc106;UID=sa;PWD=Admin@123;initial catalog=SFJDemo2:
+Telerik.OpenAccess.RT.sql.SQLException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.Runtime.Logging.LoggingDbConnection.Open()
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon()
+DBDriver: Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver
+useUTCForReads=1
+versant.prepareCommands=True Telerik.OpenAccess.RT.sql.SQLException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.Runtime.Logging.LoggingDbConnection.Open()
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon() ---> Telerik.OpenAccess.RT.sql.SQLException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.Runtime.Logging.LoggingDbConnection.Open()
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon()
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.SPI.Backends.ThrowException(Exception e)
+   at OpenAccessRuntime.ExceptionWrapper.Throw()
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon()
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealConWithRetry(Int32 retryCountParam, Int32 millis, Int32 userId)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createPooledConnection(Int32 retryCountParam, Int32 retryIntervalMsParam, Int32 userId)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.GetManagedConnection(Boolean highPriority, Boolean autoCommit, Int32 smId)
+   at OpenAccessRuntime.Relational.RelationalStorageManager.obtainConnection(Boolean forWriting) ---> Telerik.OpenAccess.Exceptions.DataStoreException: Unable to connect to Backend=mssql;Driver=genericADO2;ConnectionString=data source=cipl-1pc106;UID=sa;PWD=Admin@123;initial catalog=SFJDemo2:
+Telerik.OpenAccess.RT.sql.SQLException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.Runtime.Logging.LoggingDbConnection.Open()
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon()
+DBDriver: Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver
+useUTCForReads=1
+versant.prepareCommands=True Telerik.OpenAccess.RT.sql.SQLException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.Runtime.Logging.LoggingDbConnection.Open()
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon() ---> Telerik.OpenAccess.RT.sql.SQLException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15289; handshake=10819;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.Runtime.Logging.LoggingDbConnection.Open()
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon()
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.SPI.Backends.ThrowException(Exception e)
+   at OpenAccessRuntime.ExceptionWrapper.Throw()
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealCon()
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createRealConWithRetry(Int32 retryCountParam, Int32 millis, Int32 userId)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.createPooledConnection(Int32 retryCountParam, Int32 retryIntervalMsParam, Int32 userId)
+   at OpenAccessRuntime.Relational.conn.RelationalConnectionPool.GetManagedConnection(Boolean highPriority, Boolean autoCommit, Int32 smId)
+   at OpenAccessRuntime.Relational.RelationalStorageManager.obtainConnection(Boolean forWriting)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.SPI.Backends.ThrowException(Exception e)
+   at OpenAccessRuntime.ExceptionWrapper.Throw()
+   at OpenAccessRuntime.storagemanager.logging.LoggingStorageManager.executeQueryAll(ApplicationContext context, ImmutableQueryDetails query, CompiledQuery compiledQuery, QueryParameters parameters, Int32 skip, Int32 take)
+   at OpenAccessRuntime.DataObjects.UnsynchronizedPMProxy.getAllQueryResults(CompiledQuery cq, QueryParameters parameters, Int32 skip, Int32 take)
+   at OpenAccessRuntime.DataObjects.ForwardQueryResult.Resolve()
+   at OpenAccessRuntime.DataObjects.ForwardQueryResult.get_Item(Int32 indexParam)
+   at OpenAccessRuntime.ListEnumerator.setCurrent(Int32 _pos)
+   at OpenAccessRuntime.ListEnumerator.Move(Int32 relative)
+   at Telerik.OpenAccess.Query.TypedEnumerator`1.MoveNext()
+   at Telerik.OpenAccess.Query.ExpressionExecution.PerformDatabaseQuerySingle[TResult,T](ChainedContext context, Expression expression, QueryableCategory before, Int32& found, Int32 elemAt, Boolean single, Boolean diffType)
+   at Telerik.OpenAccess.Query.ExpressionExecution.PerformQuerySingle[T,TResult](ExpressionCutter cutter, MethodCallExpression mce, ChainedContext piece, QueryOptions options)
+   at Telerik.OpenAccess.Query.Piece`1.ExecuteSingle[TResult](Expression expression)
+   at Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider.GetElement(String path)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.GetElementDatabaseReader(String path)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.LoadElementFromDatabase(ConfigSection section, LoadContext loadContext)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.TryLoadSectionFromDatabase(ConfigSection section, Boolean initial, LoadContext loadContext)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.LoadSection(ConfigSection section)
+   at Telerik.Sitefinity.Configuration.ConfigSection.Initialize(ConfigProvider provider)
+   at Telerik.Sitefinity.Configuration.ConfigProvider.GetSection[TSection]()
+   at Telerik.Sitefinity.AmazonCloudSearch.AmazonCloudSearchInstaller.SetProperties()
+   at Telerik.Sitefinity.AmazonCloudSearch.AmazonCloudSearchInstaller.Bootstrapper_Initialized(Object sender, ExecutedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Telerik.Sitefinity.Abstractions.Bootstrapper.OnInitialized(Object sender, ExecutedEventArgs args)
+   at Telerik.Sitefinity.Abstractions.Bootstrapper.Bootstrap()
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.<Init>b__2(Object ctx)
+   at System.Threading.Tasks.Task.Execute()
+Category: 
+Priority: -1
+EventId: 0
+Severity: Critical
+Title:
+Machine: CIPL-1PC30
+App Domain: /LM/W3SVC/4/ROOT-1-131883896706813831
+ProcessId: 10536
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:2144
+Extended Properties: 
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: CIPL-1PC30
+
+App Domain: /LM/W3SVC/4/ROOT-1-131883896706813831
+
+ProcessId: 10536
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2144
+
+Extended Properties: 
+----------------------------------------
