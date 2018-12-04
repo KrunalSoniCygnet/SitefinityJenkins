@@ -1081,11 +1081,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\appStatusReport.html" />
-    <Content Include="App_Data\GeoLocation\citieslist.txt" />
-    <Content Include="App_Data\RadSpell\de-DE.tdf" />
-    <Content Include="App_Data\RadSpell\en-US.tdf" />
-    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="App_Data\Sitefinity\Configuration\AuthenticationConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\DataConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\PersonalizationConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\ProjectConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\SecurityConfig.config" />
+    <Content Include="App_Data\Sitefinity\Logs\Error.log" />
+    <Content Include="App_Data\Sitefinity\Logs\Trace.log" />
+    <Content Include="App_Data\Sitefinity\Logs\UpgradeTrace.log" />
     <Content Include="ClientBin\Telerik.Sitefinity.Analytics.xap" />
     <Content Include="ClientBin\Telerik.Sitefinity.Silverlight.xap" />
     <Content Include="Default.aspx" />
@@ -1209,20 +1212,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Sitefinity\Temp\Libraries\" />
-    <Folder Include="App_Data\Storage\FileSystem\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\GeoLocation\GeoLiteCity.dat" />
-    <Content Include="App_Data\Sitefinity\Configuration\AuthenticationConfig.config" />
-    <Content Include="App_Data\Sitefinity\Configuration\DataConfig.config" />
-    <Content Include="App_Data\Sitefinity\Configuration\PersonalizationConfig.config" />
-    <Content Include="App_Data\Sitefinity\Configuration\ProjectConfig.config" />
-    <Content Include="App_Data\Sitefinity\Configuration\SecurityConfig.config" />
-    <Content Include="App_Data\Sitefinity\Logs\Error.log" />
-    <Content Include="App_Data\Sitefinity\Logs\Trace.log" />
-    <Content Include="App_Data\Sitefinity\Logs\UpgradeTrace.log" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="App_Data\Sitefinity\Sitefinity.lic" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
