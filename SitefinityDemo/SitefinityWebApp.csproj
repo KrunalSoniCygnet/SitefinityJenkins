@@ -1088,9 +1088,6 @@
     <Content Include="App_Data\Sitefinity\Configuration\PersonalizationConfig.config" />
     <Content Include="App_Data\Sitefinity\Configuration\ProjectConfig.config" />
     <Content Include="App_Data\Sitefinity\Configuration\SecurityConfig.config" />
-    <Content Include="App_Data\Sitefinity\Logs\Error.log" />
-    <Content Include="App_Data\Sitefinity\Logs\Trace.log" />
-    <Content Include="App_Data\Sitefinity\Logs\UpgradeTrace.log" />
     <Content Include="App_Data\Sitefinity\Sitefinity.lic" />
     <Content Include="bin\SitefinityWebApp.dll" />
     <Content Include="bin\SitefinityWebApp.pdb" />
